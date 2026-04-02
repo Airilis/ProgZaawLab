@@ -5,7 +5,43 @@ using System;
 
 class Program
 {
-    static void Main()
+    static void OnStatusChanged(object sender, OrderStatusChangedEventArgs e)
+    {
+        Console.WriteLine($"[STATUS] Order {e.Order.Id}: {e.OldStatus} → {e.NewStatus} ({e.Timestamp:T})");
+    }
+
+    static void OnValidationCompleted(object sender, OrderValidationEventArgs e)
+    {
+        if (e.IsValid)
+        {
+            Console.WriteLine($"[VALIDATION] Order {e.Order.Id}: OK");
+        }
+        else
+        {
+            Console.WriteLine($"[VALIDATION] Order {e.Order.Id}: ERROR");
+            e.Errors.ForEach(err => Console.WriteLine($"   - {err}"));
+        }
+    }
+
+    static void SendEmailSimulation(object sender, OrderStatusChangedEventArgs e)
+    {
+        if (e.NewStatus == OrderStatus.Completed)
+        {
+            Console.WriteLine($"[EMAIL] Wysłano email o zakończeniu zamówienia {e.Order.Id}");
+        }
+    }
+
+    static int processedCount = 0;
+
+    static void UpdateStatistics(object sender, OrderStatusChangedEventArgs e)
+    {
+        if (e.NewStatus == OrderStatus.Completed)
+        {
+            processedCount++;
+            Console.WriteLine($"[STATS] Przetworzono: {processedCount}");
+        }
+    }
+    static async Task Main()
     {
         //ZADANIE 2
         var validator = new OrderValidator();
@@ -78,5 +114,83 @@ class Program
         var orders = SampleData.Orders;
         // Wywołanie raportów LINQ
         OrderReports.RunReports(orders);
+
+        //Lab 2 Main continuation
+
+        // ZADANIE 1
+
+        Console.WriteLine("\n=== PIPELINE EVENTS ===");
+
+        var pipeline = new OrderFlow.OrderFlowApp.Services.OrderPipeline();
+
+        //  Subskrypcje
+        pipeline.StatusChanged += OnStatusChanged;
+        pipeline.StatusChanged += SendEmailSimulation;
+        pipeline.StatusChanged += UpdateStatistics;
+
+        pipeline.ValidationCompleted += OnValidationCompleted;
+
+        //  Test – kilka zamówień
+        foreach (var order in SampleData.Orders.Take(3))
+        {
+            Console.WriteLine($"\n--- Start processing Order {order.Id} ---");
+            pipeline.ProcessOrder(order);
+        }
+
+        // ZADANIE 2
+
+        Console.WriteLine("\n=== ASYNC PROCESSING ===");
+
+        var asyncProcessor = new OrderFlow.OrderFlowApp.Services.AsyncOrderProcessor();
+        var asyncOrders = SampleData.Orders.Take(6).ToList();
+
+        //  SEKWENCYJNIE
+        var sw1 = System.Diagnostics.Stopwatch.StartNew();
+        await asyncProcessor.ProcessSequentialAsync(asyncOrders);
+        sw1.Stop();
+
+        Console.WriteLine($"Sekwencyjnie: {sw1.ElapsedMilliseconds} ms\n");
+
+        //  RÓWNOLEGLE
+        var sw2 = System.Diagnostics.Stopwatch.StartNew();
+        await asyncProcessor.ProcessMultipleOrdersAsync(asyncOrders);
+        sw2.Stop();
+
+        Console.WriteLine($"Równolegle: {sw2.ElapsedMilliseconds} ms");
+
+        // ZADANIE 3
+
+        //test błędu
+        //skomentowany żeby wyjątki nie wydawał i dało się uruchomić normalnie
+        /*
+        Console.WriteLine("\n=== THREAD SAFETY - BAD ===");
+
+        var statsBad = new OrderFlow.OrderFlowApp.Services.OrderStatistics();
+
+        Parallel.ForEach(SampleData.Orders, order =>
+        {
+            statsBad.AddOrder(order);
+        });
+
+        Console.WriteLine($"TotalProcessed: {statsBad.TotalProcessed}");
+        Console.WriteLine($"TotalRevenue: {statsBad.TotalRevenue}");
+        */
+        Console.WriteLine("\n=== THREAD SAFETY - FIXED ===");
+
+        var statsGood = new OrderFlow.OrderFlowApp.Services.OrderStatisticsSafe();
+
+        Parallel.ForEach(SampleData.Orders, order =>
+        {
+            statsGood.AddOrder(order);
+        });
+
+        Console.WriteLine($"TotalProcessed: {statsGood.TotalProcessed}");
+        Console.WriteLine($"TotalRevenue: {statsGood.TotalRevenue}");
+
+        foreach (var kv in statsGood.OrdersPerStatus)
+        {
+            Console.WriteLine($"{kv.Key}: {kv.Value}");
+        }
+
     }
 }
