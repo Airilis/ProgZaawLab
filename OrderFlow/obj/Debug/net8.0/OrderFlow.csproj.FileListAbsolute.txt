@@ -12,3 +12,17 @@ C:\Users\Student\Desktop\ProgZaawLab\OrderFlow\OrderFlow\obj\Debug\net8.0\refint
 C:\Users\Student\Desktop\ProgZaawLab\OrderFlow\OrderFlow\obj\Debug\net8.0\OrderFlow.pdb
 C:\Users\Student\Desktop\ProgZaawLab\OrderFlow\OrderFlow\obj\Debug\net8.0\OrderFlow.genruntimeconfig.cache
 C:\Users\Student\Desktop\ProgZaawLab\OrderFlow\OrderFlow\obj\Debug\net8.0\ref\OrderFlow.dll
+C:\Users\Student\source\repos\ConsoleApp1\OrderFlow\bin\Debug\net8.0\OrderFlow.exe
+C:\Users\Student\source\repos\ConsoleApp1\OrderFlow\bin\Debug\net8.0\OrderFlow.deps.json
+C:\Users\Student\source\repos\ConsoleApp1\OrderFlow\bin\Debug\net8.0\OrderFlow.runtimeconfig.json
+C:\Users\Student\source\repos\ConsoleApp1\OrderFlow\bin\Debug\net8.0\OrderFlow.dll
+C:\Users\Student\source\repos\ConsoleApp1\OrderFlow\bin\Debug\net8.0\OrderFlow.pdb
+C:\Users\Student\source\repos\ConsoleApp1\OrderFlow\obj\Debug\net8.0\OrderFlow.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student\source\repos\ConsoleApp1\OrderFlow\obj\Debug\net8.0\OrderFlow.AssemblyInfoInputs.cache
+C:\Users\Student\source\repos\ConsoleApp1\OrderFlow\obj\Debug\net8.0\OrderFlow.AssemblyInfo.cs
+C:\Users\Student\source\repos\ConsoleApp1\OrderFlow\obj\Debug\net8.0\OrderFlow.csproj.CoreCompileInputs.cache
+C:\Users\Student\source\repos\ConsoleApp1\OrderFlow\obj\Debug\net8.0\OrderFlow.dll
+C:\Users\Student\source\repos\ConsoleApp1\OrderFlow\obj\Debug\net8.0\refint\OrderFlow.dll
+C:\Users\Student\source\repos\ConsoleApp1\OrderFlow\obj\Debug\net8.0\OrderFlow.pdb
+C:\Users\Student\source\repos\ConsoleApp1\OrderFlow\obj\Debug\net8.0\OrderFlow.genruntimeconfig.cache
+C:\Users\Student\source\repos\ConsoleApp1\OrderFlow\obj\Debug\net8.0\ref\OrderFlow.dll
