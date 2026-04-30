@@ -19,10 +19,10 @@ namespace OrderFlow.OrderFlowApp.Data
         };
         public static List<Customer> Customers { get; } = new List<Customer>
         {
-            new Customer { Id = 1, Name = "Alice", IsVip = true },
-            new Customer { Id = 2, Name = "Bob" },
-            new Customer { Id = 3, Name = "Charlie" },
-            new Customer { Id = 4, Name = "Diana" },
+            new Customer { Id = 1, FullName = "Alice", IsVip = true },
+            new Customer { Id = 2, FullName = "Bob" },
+            new Customer { Id = 3, FullName = "Charlie" },
+            new Customer { Id = 4, FullName = "Diana" },
         };
         public static List<Order> Orders { get; } = new List<Order>
         {

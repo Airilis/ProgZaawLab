@@ -27,7 +27,7 @@ namespace OrderFlow.OrderFlowApp.Services
             rules.Add(QuantitiesPositive);
 
             // Dodaj reguły jako lambdy
-            funcRules.Add(o => (o.Items.Count > 0 && o.Status != OrderStatus.Cancelled, "Order is cancelled or has no items"));
+            funcRules.Add(o => (o.Status != OrderStatus.Cancelled, "Order is cancelled"));
             funcRules.Add(o => (o.TotalAmount <= 10000, "Order total amount exceeds 10 000"));
         }
 

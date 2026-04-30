@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report generated="2026-04-30T18:28:44.0328485+02:00">
+  <summary totalOrders="6" totalRevenue="0" />
+  <byStatus>
+    <status name="Completed" count="4" revenue="0" />
+    <status name="Cancelled" count="1" revenue="0" />
+    <status name="New" count="1" revenue="0" />
+  </byStatus>
+  <byCustomer>
+    <customer id="1" name="Alice" isVip="true">
+      <orderCount>2</orderCount>
+      <totalSpent>0</totalSpent>
+      <orders>
+        <orderRef id="1" total="0" />
+        <orderRef id="5" total="0" />
+      </orders>
+    </customer>
+    <customer id="2" name="Bob" isVip="false">
+      <orderCount>1</orderCount>
+      <totalSpent>0</totalSpent>
+      <orders>
+        <orderRef id="2" total="0" />
+      </orders>
+    </customer>
+    <customer id="3" name="Charlie" isVip="false">
+      <orderCount>2</orderCount>
+      <totalSpent>0</totalSpent>
+      <orders>
+        <orderRef id="3" total="0" />
+        <orderRef id="6" total="0" />
+      </orders>
+    </customer>
+    <customer id="4" name="Diana" isVip="false">
+      <orderCount>1</orderCount>
+      <totalSpent>0</totalSpent>
+      <orders>
+        <orderRef id="4" total="0" />
+      </orders>
+    </customer>
+  </byCustomer>
+</report>

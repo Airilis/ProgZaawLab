@@ -1,0 +1,424 @@
+[
+  {
+    "id": 1,
+    "customerId": 0,
+    "customer": {
+      "id": 1,
+      "fullName": "Alice",
+      "isVip": true,
+      "email": null,
+      "orders": []
+    },
+    "items": [
+      {
+        "id": 0,
+        "orderId": 0,
+        "order": null,
+        "productId": 0,
+        "product": {
+          "id": 1,
+          "name": "Laptop",
+          "category": "Electronics",
+          "price": 3500,
+          "orderItems": []
+        },
+        "quantity": 1,
+        "unitPrice": 0,
+        "totalPrice": 0
+      },
+      {
+        "id": 0,
+        "orderId": 0,
+        "order": null,
+        "productId": 0,
+        "product": {
+          "id": 5,
+          "name": "Book",
+          "category": "Books",
+          "price": 50,
+          "orderItems": []
+        },
+        "quantity": 5,
+        "unitPrice": 0,
+        "totalPrice": 0
+      }
+    ],
+    "status": 3,
+    "notes": null,
+    "_items": [
+      {
+        "id": 0,
+        "orderId": 0,
+        "order": null,
+        "productId": 0,
+        "product": {
+          "id": 1,
+          "name": "Laptop",
+          "category": "Electronics",
+          "price": 3500,
+          "orderItems": []
+        },
+        "quantity": 1,
+        "unitPrice": 0,
+        "totalPrice": 0
+      },
+      {
+        "id": 0,
+        "orderId": 0,
+        "order": null,
+        "productId": 0,
+        "product": {
+          "id": 5,
+          "name": "Book",
+          "category": "Books",
+          "price": 50,
+          "orderItems": []
+        },
+        "quantity": 5,
+        "unitPrice": 0,
+        "totalPrice": 0
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "customerId": 0,
+    "customer": {
+      "id": 2,
+      "fullName": "Bob",
+      "isVip": false,
+      "email": null,
+      "orders": []
+    },
+    "items": [
+      {
+        "id": 0,
+        "orderId": 0,
+        "order": null,
+        "productId": 0,
+        "product": {
+          "id": 2,
+          "name": "Smartphone",
+          "category": "Electronics",
+          "price": 2000,
+          "orderItems": []
+        },
+        "quantity": 2,
+        "unitPrice": 0,
+        "totalPrice": 0
+      }
+    ],
+    "status": 3,
+    "notes": null,
+    "_items": [
+      {
+        "id": 0,
+        "orderId": 0,
+        "order": null,
+        "productId": 0,
+        "product": {
+          "id": 2,
+          "name": "Smartphone",
+          "category": "Electronics",
+          "price": 2000,
+          "orderItems": []
+        },
+        "quantity": 2,
+        "unitPrice": 0,
+        "totalPrice": 0
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "customerId": 0,
+    "customer": {
+      "id": 3,
+      "fullName": "Charlie",
+      "isVip": false,
+      "email": null,
+      "orders": []
+    },
+    "items": [
+      {
+        "id": 0,
+        "orderId": 0,
+        "order": null,
+        "productId": 0,
+        "product": {
+          "id": 3,
+          "name": "Chair",
+          "category": "Furniture",
+          "price": 300,
+          "orderItems": []
+        },
+        "quantity": 4,
+        "unitPrice": 0,
+        "totalPrice": 0
+      },
+      {
+        "id": 0,
+        "orderId": 0,
+        "order": null,
+        "productId": 0,
+        "product": {
+          "id": 4,
+          "name": "Desk",
+          "category": "Furniture",
+          "price": 800,
+          "orderItems": []
+        },
+        "quantity": 1,
+        "unitPrice": 0,
+        "totalPrice": 0
+      }
+    ],
+    "status": 3,
+    "notes": null,
+    "_items": [
+      {
+        "id": 0,
+        "orderId": 0,
+        "order": null,
+        "productId": 0,
+        "product": {
+          "id": 3,
+          "name": "Chair",
+          "category": "Furniture",
+          "price": 300,
+          "orderItems": []
+        },
+        "quantity": 4,
+        "unitPrice": 0,
+        "totalPrice": 0
+      },
+      {
+        "id": 0,
+        "orderId": 0,
+        "order": null,
+        "productId": 0,
+        "product": {
+          "id": 4,
+          "name": "Desk",
+          "category": "Furniture",
+          "price": 800,
+          "orderItems": []
+        },
+        "quantity": 1,
+        "unitPrice": 0,
+        "totalPrice": 0
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "customerId": 0,
+    "customer": {
+      "id": 4,
+      "fullName": "Diana",
+      "isVip": false,
+      "email": null,
+      "orders": []
+    },
+    "items": [
+      {
+        "id": 0,
+        "orderId": 0,
+        "order": null,
+        "productId": 0,
+        "product": {
+          "id": 5,
+          "name": "Book",
+          "category": "Books",
+          "price": 50,
+          "orderItems": []
+        },
+        "quantity": 10,
+        "unitPrice": 0,
+        "totalPrice": 0
+      }
+    ],
+    "status": 3,
+    "notes": null,
+    "_items": [
+      {
+        "id": 0,
+        "orderId": 0,
+        "order": null,
+        "productId": 0,
+        "product": {
+          "id": 5,
+          "name": "Book",
+          "category": "Books",
+          "price": 50,
+          "orderItems": []
+        },
+        "quantity": 10,
+        "unitPrice": 0,
+        "totalPrice": 0
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "customerId": 0,
+    "customer": {
+      "id": 1,
+      "fullName": "Alice",
+      "isVip": true,
+      "email": null,
+      "orders": []
+    },
+    "items": [
+      {
+        "id": 0,
+        "orderId": 0,
+        "order": null,
+        "productId": 0,
+        "product": {
+          "id": 2,
+          "name": "Smartphone",
+          "category": "Electronics",
+          "price": 2000,
+          "orderItems": []
+        },
+        "quantity": 1,
+        "unitPrice": 0,
+        "totalPrice": 0
+      },
+      {
+        "id": 0,
+        "orderId": 0,
+        "order": null,
+        "productId": 0,
+        "product": {
+          "id": 4,
+          "name": "Desk",
+          "category": "Furniture",
+          "price": 800,
+          "orderItems": []
+        },
+        "quantity": 2,
+        "unitPrice": 0,
+        "totalPrice": 0
+      }
+    ],
+    "status": 4,
+    "notes": null,
+    "_items": [
+      {
+        "id": 0,
+        "orderId": 0,
+        "order": null,
+        "productId": 0,
+        "product": {
+          "id": 2,
+          "name": "Smartphone",
+          "category": "Electronics",
+          "price": 2000,
+          "orderItems": []
+        },
+        "quantity": 1,
+        "unitPrice": 0,
+        "totalPrice": 0
+      },
+      {
+        "id": 0,
+        "orderId": 0,
+        "order": null,
+        "productId": 0,
+        "product": {
+          "id": 4,
+          "name": "Desk",
+          "category": "Furniture",
+          "price": 800,
+          "orderItems": []
+        },
+        "quantity": 2,
+        "unitPrice": 0,
+        "totalPrice": 0
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "customerId": 0,
+    "customer": {
+      "id": 3,
+      "fullName": "Charlie",
+      "isVip": false,
+      "email": null,
+      "orders": []
+    },
+    "items": [
+      {
+        "id": 0,
+        "orderId": 0,
+        "order": null,
+        "productId": 0,
+        "product": {
+          "id": 1,
+          "name": "Laptop",
+          "category": "Electronics",
+          "price": 3500,
+          "orderItems": []
+        },
+        "quantity": 1,
+        "unitPrice": 0,
+        "totalPrice": 0
+      },
+      {
+        "id": 0,
+        "orderId": 0,
+        "order": null,
+        "productId": 0,
+        "product": {
+          "id": 3,
+          "name": "Chair",
+          "category": "Furniture",
+          "price": 300,
+          "orderItems": []
+        },
+        "quantity": 2,
+        "unitPrice": 0,
+        "totalPrice": 0
+      }
+    ],
+    "status": 0,
+    "notes": null,
+    "_items": [
+      {
+        "id": 0,
+        "orderId": 0,
+        "order": null,
+        "productId": 0,
+        "product": {
+          "id": 1,
+          "name": "Laptop",
+          "category": "Electronics",
+          "price": 3500,
+          "orderItems": []
+        },
+        "quantity": 1,
+        "unitPrice": 0,
+        "totalPrice": 0
+      },
+      {
+        "id": 0,
+        "orderId": 0,
+        "order": null,
+        "productId": 0,
+        "product": {
+          "id": 3,
+          "name": "Chair",
+          "category": "Furniture",
+          "price": 300,
+          "orderItems": []
+        },
+        "quantity": 2,
+        "unitPrice": 0,
+        "totalPrice": 0
+      }
+    ]
+  }
+]

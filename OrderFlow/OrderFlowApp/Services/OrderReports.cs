@@ -21,7 +21,7 @@ namespace OrderFlow.OrderFlowApp.Services
                 .Join(SampleData.Customers,
                       o => o.Customer.Id,
                       c => c.Id,
-                      (o, c) => new { CustomerName = c.Name, OrderId = o.Id, Total = o.TotalAmount })
+                      (o, c) => new { CustomerName = c.FullName, OrderId = o.Id, Total = o.TotalAmount })
                 .GroupBy(x => x.CustomerName)
                 .ToList();
 
@@ -51,7 +51,7 @@ namespace OrderFlow.OrderFlowApp.Services
             // Method syntax
             // ------------------------
             var topCustomers = orders
-                .GroupBy(o => o.Customer.Name)
+                .GroupBy(o => o.Customer.FullName)
                 .Select(g => new { Customer = g.Key, TotalSpent = g.Sum(o => o.TotalAmount) })
                 .OrderByDescending(x => x.TotalSpent)
                 .Take(3);
@@ -87,7 +87,7 @@ namespace OrderFlow.OrderFlowApp.Services
                 .GroupJoin(orders,
                            c => c.Id,
                            o => o.Customer.Id,
-                           (c, ords) => new { Customer = c.Name, Orders = ords })
+                           (c, ords) => new { Customer = c.FullName, Orders = ords })
                 .ToList();
 
             Console.WriteLine("\n=== Customers with their orders (left join) ===");
@@ -108,7 +108,7 @@ namespace OrderFlow.OrderFlowApp.Services
             var favCategoryPerCustomer =
                 from o in orders
                 from item in o.Items
-                group item by o.Customer.Name into g
+                group item by o.Customer.FullName into g
                 select new
                 {
                     Customer = g.Key,

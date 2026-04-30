@@ -49,7 +49,7 @@ namespace OrderFlow.OrderFlowApp.Services
                 .Take(3)
                 .ToList();
             // Action - wypisz i zmień status na Processing
-            Action<Order> print = o => Console.WriteLine($"Order {o.Id} for {o.Customer.Name}: {o.TotalAmount} zł");
+            Action<Order> print = o => Console.WriteLine($"Order {o.Id} for {o.Customer.FullName}: {o.TotalAmount} zł");
             Action<Order> markProcessing = o => o.Status = OrderStatus.Processing;
 
             foreach (var order in filtered)

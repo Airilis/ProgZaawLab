@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfOrder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Order Id="1">
+    <CustomerId>0</CustomerId>
+    <customer>
+      <Id>1</Id>
+      <FullName>Alice</FullName>
+      <IsVip>true</IsVip>
+      <Orders />
+    </customer>
+    <Items>
+      <OrderItem>
+        <Id>0</Id>
+        <OrderId>0</OrderId>
+        <ProductId>0</ProductId>
+        <Product>
+          <Id>1</Id>
+          <Name>Laptop</Name>
+          <Category>Electronics</Category>
+          <Price>3500</Price>
+          <OrderItems />
+        </Product>
+        <Quantity>1</Quantity>
+        <UnitPrice>0</UnitPrice>
+      </OrderItem>
+      <OrderItem>
+        <Id>0</Id>
+        <OrderId>0</OrderId>
+        <ProductId>0</ProductId>
+        <Product>
+          <Id>5</Id>
+          <Name>Book</Name>
+          <Category>Books</Category>
+          <Price>50</Price>
+          <OrderItems />
+        </Product>
+        <Quantity>5</Quantity>
+        <UnitPrice>0</UnitPrice>
+      </OrderItem>
+    </Items>
+    <status>Completed</status>
+  </Order>
+  <Order Id="2">
+    <CustomerId>0</CustomerId>
+    <customer>
+      <Id>2</Id>
+      <FullName>Bob</FullName>
+      <IsVip>false</IsVip>
+      <Orders />
+    </customer>
+    <Items>
+      <OrderItem>
+        <Id>0</Id>
+        <OrderId>0</OrderId>
+        <ProductId>0</ProductId>
+        <Product>
+          <Id>2</Id>
+          <Name>Smartphone</Name>
+          <Category>Electronics</Category>
+          <Price>2000</Price>
+          <OrderItems />
+        </Product>
+        <Quantity>2</Quantity>
+        <UnitPrice>0</UnitPrice>
+      </OrderItem>
+    </Items>
+    <status>Completed</status>
+  </Order>
+  <Order Id="3">
+    <CustomerId>0</CustomerId>
+    <customer>
+      <Id>3</Id>
+      <FullName>Charlie</FullName>
+      <IsVip>false</IsVip>
+      <Orders />
+    </customer>
+    <Items>
+      <OrderItem>
+        <Id>0</Id>
+        <OrderId>0</OrderId>
+        <ProductId>0</ProductId>
+        <Product>
+          <Id>3</Id>
+          <Name>Chair</Name>
+          <Category>Furniture</Category>
+          <Price>300</Price>
+          <OrderItems />
+        </Product>
+        <Quantity>4</Quantity>
+        <UnitPrice>0</UnitPrice>
+      </OrderItem>
+      <OrderItem>
+        <Id>0</Id>
+        <OrderId>0</OrderId>
+        <ProductId>0</ProductId>
+        <Product>
+          <Id>4</Id>
+          <Name>Desk</Name>
+          <Category>Furniture</Category>
+          <Price>800</Price>
+          <OrderItems />
+        </Product>
+        <Quantity>1</Quantity>
+        <UnitPrice>0</UnitPrice>
+      </OrderItem>
+    </Items>
+    <status>Completed</status>
+  </Order>
+  <Order Id="4">
+    <CustomerId>0</CustomerId>
+    <customer>
+      <Id>4</Id>
+      <FullName>Diana</FullName>
+      <IsVip>false</IsVip>
+      <Orders />
+    </customer>
+    <Items>
+      <OrderItem>
+        <Id>0</Id>
+        <OrderId>0</OrderId>
+        <ProductId>0</ProductId>
+        <Product>
+          <Id>5</Id>
+          <Name>Book</Name>
+          <Category>Books</Category>
+          <Price>50</Price>
+          <OrderItems />
+        </Product>
+        <Quantity>10</Quantity>
+        <UnitPrice>0</UnitPrice>
+      </OrderItem>
+    </Items>
+    <status>Completed</status>
+  </Order>
+  <Order Id="5">
+    <CustomerId>0</CustomerId>
+    <customer>
+      <Id>1</Id>
+      <FullName>Alice</FullName>
+      <IsVip>true</IsVip>
+      <Orders />
+    </customer>
+    <Items>
+      <OrderItem>
+        <Id>0</Id>
+        <OrderId>0</OrderId>
+        <ProductId>0</ProductId>
+        <Product>
+          <Id>2</Id>
+          <Name>Smartphone</Name>
+          <Category>Electronics</Category>
+          <Price>2000</Price>
+          <OrderItems />
+        </Product>
+        <Quantity>1</Quantity>
+        <UnitPrice>0</UnitPrice>
+      </OrderItem>
+      <OrderItem>
+        <Id>0</Id>
+        <OrderId>0</OrderId>
+        <ProductId>0</ProductId>
+        <Product>
+          <Id>4</Id>
+          <Name>Desk</Name>
+          <Category>Furniture</Category>
+          <Price>800</Price>
+          <OrderItems />
+        </Product>
+        <Quantity>2</Quantity>
+        <UnitPrice>0</UnitPrice>
+      </OrderItem>
+    </Items>
+    <status>Cancelled</status>
+  </Order>
+  <Order Id="6">
+    <CustomerId>0</CustomerId>
+    <customer>
+      <Id>3</Id>
+      <FullName>Charlie</FullName>
+      <IsVip>false</IsVip>
+      <Orders />
+    </customer>
+    <Items>
+      <OrderItem>
+        <Id>0</Id>
+        <OrderId>0</OrderId>
+        <ProductId>0</ProductId>
+        <Product>
+          <Id>1</Id>
+          <Name>Laptop</Name>
+          <Category>Electronics</Category>
+          <Price>3500</Price>
+          <OrderItems />
+        </Product>
+        <Quantity>1</Quantity>
+        <UnitPrice>0</UnitPrice>
+      </OrderItem>
+      <OrderItem>
+        <Id>0</Id>
+        <OrderId>0</OrderId>
+        <ProductId>0</ProductId>
+        <Product>
+          <Id>3</Id>
+          <Name>Chair</Name>
+          <Category>Furniture</Category>
+          <Price>300</Price>
+          <OrderItems />
+        </Product>
+        <Quantity>2</Quantity>
+        <UnitPrice>0</UnitPrice>
+      </OrderItem>
+    </Items>
+    <status>New</status>
+  </Order>
+</ArrayOfOrder>
