@@ -32,7 +32,7 @@ namespace OrderFlow.OrderFlowApp.Services
         }
 
         // Named methods
-        private bool HasItems(Order order, out string errorMessage)
+        public bool HasItems(Order order, out string errorMessage)
         {
             if (order.Items.Count == 0)
             {
@@ -43,7 +43,7 @@ namespace OrderFlow.OrderFlowApp.Services
             return true;
         }
 
-        private bool TotalAmountUnderLimit(Order order, out string errorMessage)
+        public bool TotalAmountUnderLimit(Order order, out string errorMessage)
         {
             if (order.TotalAmount > 5000)
             {
@@ -54,7 +54,7 @@ namespace OrderFlow.OrderFlowApp.Services
             return true;
         }
 
-        private bool QuantitiesPositive(Order order, out string errorMessage)
+        public bool QuantitiesPositive(Order order, out string errorMessage)
         {
             foreach (var item in order.Items)
             {
